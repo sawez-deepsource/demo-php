@@ -1,0 +1,12 @@
+version = 1
+
+test_patterns = ["tests/**"]
+
+exclude_patterns = ["vendor/**"]
+
+[[analyzers]]
+name = "php"
+enabled = true
+
+  [analyzers.meta]
+  skip_doc_coverage = ["magic", "nonpublic"]
